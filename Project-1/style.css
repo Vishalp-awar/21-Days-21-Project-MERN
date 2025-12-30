@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body{
+ font-family: "Poppins",sans-serif;
+ background-color: #fdfdfd;
+ color: #333;
+}
+
+header{
+    background-color: #0e3959;
+    padding: 20px 0;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px
+}
+
+nav ul a{
+    color: #fff;
+    text-decoration: none;
+    font-size: larger;
+}
+
+nav a:hover{
+    color: black ;
+}
