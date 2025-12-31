@@ -24,6 +24,8 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 100px;
+    margin-right: 50px;
 }
 
 nav ul{
@@ -167,3 +169,77 @@ section .container{
     color: #333;
 }
 
+
+
+/* Pacakage section */
+
+#packages {
+    padding: 60px 0;
+    background: #fdfdfd;
+}
+
+#Package h2 {
+   justify-content: center;
+    margin-bottom: 40px;
+    margin-top:  20px;
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+}
+
+.pacakge-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    justify-content: center;
+}
+
+.pacakge-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.pacakge-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.pacakge-card:hover {
+    transform: translateY(-10px);
+}
+
+.pacakge-card h3 {
+    font-size: 1.2rem;
+    margin: 15px;
+    color: #333;
+}
+
+
+.pacakge-card a{
+    display: inline-block;
+    background-color: #6ba66b;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+
+.pacakge-card a:hover{
+    background-color: #5a9459;
+}
+
+.price {
+    color: #000000;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
