@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --bg-color: #0f172a;
+  --text-color: #cbd5e1;
+  --accent-color: #818cf8;
+  --card-bg: #1e293b;
+  --btn-bg: #6366f1;
+  --btn-text: #ffffff;
+  --border-color: #334155;
+  --subtle-text: #94a3b8;
+}
+
+.light-theme {
+  --bg-color: #f1f5f9;
+  --text-color: #334155;
+  --accent-color: #6366f1;
+  --card-bg: #ffffff;
+  --border-color: #e2e8f0;
+  --subtle-text: #64748b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+header {
+  background: var(--card-bg);
+  color: var(--text-color);
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+.theme-toggle {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  border-radius: 8px;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background: var(--accent-color);
+  color: var(--btn-text);
+  border-color: var(--accent-color);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav ul a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+nav a:hover {
+  color: var(--accent-color);
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--accent-color);
+  text-decoration: none;
+}
