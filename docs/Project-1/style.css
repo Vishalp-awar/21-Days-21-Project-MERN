@@ -503,5 +503,15 @@ footer iframe {
     text-align: center;
     font-size: 0.95rem;
   }
-}
-  
+    .pacakge-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pacakge-card button {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+}  
+
