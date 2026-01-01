@@ -259,16 +259,16 @@ section .container{
   background: #0e3959;
   color: #fff;
   border: none;
-  margin-left: 80px;
   padding: 10px 20px;
-  margin-bottom: 15px;
+  margin: 10px auto 15px;  
+  display: block;         
   border-radius: 5px;
   font-weight: 600;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.3s ease;
-  align-items: center;
-
 }
+
+
 
 .pacakge-grid button:hover {
   background: #ffca28;
