@@ -48,3 +48,79 @@ document.addEventListener("DOMContentLoaded", function() {
     type();
 });
 
+// --- Hamburger / Mobile navigation ---
+(function(){
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+  if(!hamburger || !navLinks) return;
+
+  let lastFocused = null;
+
+  function openMenu(){
+    lastFocused = document.activeElement;
+    hamburger.classList.add('active');
+    navLinks.classList.add('active');
+    hamburger.setAttribute('aria-expanded', 'true');
+    // lock background scroll
+    document.body.style.overflow = 'hidden';
+    // focus first link for keyboard users
+    const firstLink = navLinks.querySelector('a');
+    if(firstLink) firstLink.focus();
+    document.addEventListener('keydown', onKeyDown);
+    document.addEventListener('click', onClickOutside);
+  }
+
+  function closeMenu(){
+    hamburger.classList.remove('active');
+    navLinks.classList.remove('active');
+    hamburger.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+    // restore focus
+    if(lastFocused) lastFocused.focus();
+    document.removeEventListener('keydown', onKeyDown);
+    document.removeEventListener('click', onClickOutside);
+  }
+
+  function toggleMenu(){
+    if(navLinks.classList.contains('active')) closeMenu(); else openMenu();
+  }
+
+  function onKeyDown(e){
+    if(e.key === 'Escape'){
+      closeMenu();
+    }
+    if(e.key === 'Tab'){
+      // basic focus trap inside nav when open
+      const focusable = Array.from(navLinks.querySelectorAll('a, button, [tabindex]:not([tabindex="-1"])'))
+        .filter(el => !el.hasAttribute('disabled'));
+      if(focusable.length === 0) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if(e.shiftKey && document.activeElement === first){
+        e.preventDefault();
+        last.focus();
+      } else if(!e.shiftKey && document.activeElement === last){
+        e.preventDefault();
+        first.focus();
+      }
+    }
+  }
+
+  function onClickOutside(e){
+    if(!navLinks.contains(e.target) && !hamburger.contains(e.target)){
+      closeMenu();
+    }
+  }
+
+  hamburger.addEventListener('click', (e) => {
+    e.stopPropagation();
+    toggleMenu();
+  });
+
+  // close when a nav link is clicked (mobile)
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => closeMenu()));
+
+  // reflect initial state
+  hamburger.setAttribute('aria-expanded', 'false');
+})();
+
