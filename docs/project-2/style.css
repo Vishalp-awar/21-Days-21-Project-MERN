@@ -522,17 +522,27 @@ h2 {
   }
 
   .hero-image {
-    max-width: 80%;
-    margin-top: 3rem;
+    max-width: 40%;
+    height: auto; 
+    margin-top: 2rem;
+    
   }
 
   .hero-text h1 {
     font-size: 3rem;
+    
   }
+  
 
   .recent-works,
   .services {
     padding: 4rem 5%;
+    ;
+  }
+  .recent-work h2{
+    font-size: 2rem;
+
+    
   }
 }
 
@@ -546,6 +556,7 @@ h2 {
   margin-bottom: 1rem;
   color: var(--subtle-text);
 }
+
 
 .skills-list {
   list-style: none;
