@@ -52,24 +52,13 @@ accessibility and mobile-first design.
 🔗 **Live Demo:**  
 https://vishalp-awar.github.io/21-Days-21-Project-MERN/project-01/
 
----
-
-## 📸 Screenshots – Project 01
-
-### Web View
-![ExploreWorld Web View](./assets/screenshots/project-1/01.png)
-![ExploreWorld Web View](./assets/screenshots/project-1/02.png)
-![ExploreWorld Web View](./assets/screenshots/project-1/03.png)
-![ExploreWorld Web View](./assets/screenshots/project-1/04.png)
-![ExploreWorld Web View](./assets/screenshots/project-1/05.png)
-![ExploreWorld Web View](./assets/screenshots/project-1/06.png)
 
 ---
 
 ## 📅 Project Roadmap
 
 - [x] Project 01 – ExploreWorld: Tourism Portal for Trip Planning
-- [ ] Project 02 – MyBrand: Work Showcase & Contact Portal
+- [x] Project 02 – MyBrand: Work Showcase & Contact Portal
 - [ ] Project 03 – Smart Resource Manager: Allocation & Utilization Suite
 - [ ] Project 04 – Career Board Pro (Bootstrap Based)
 - [ ] Project 05 – QuickSlot: Real-Time Booking & Calendar Orchestration (API Based)
