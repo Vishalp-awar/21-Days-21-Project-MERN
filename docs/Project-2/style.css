@@ -618,6 +618,27 @@ h2 {
   width: 28px;
   height: 28px;
 }
+
+/* Light theme footer overrides */
+body.light-theme .site-footer {
+  background: #f3f6fb;
+  color: #0b2436;
+  border-top: 1px solid rgba(11, 36, 54, 0.08); /* subtle top border */
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+body.light-theme .site-footer .logo,
+body.light-theme .site-footer .footer-links a {
+  color: #07203b;
+}
+body.light-theme .site-footer p {
+  color: #2f4b6b;
+}
+body.light-theme .site-footer .footer-links a:hover {
+  color: #0b5bd7;
+}
+body.light-theme .site-footer .footer-social img {
+  filter: none;
+}
 @media (max-width: 600px) {
   .site-footer .footer-container {
     flex-direction: column;
