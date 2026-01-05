@@ -60,8 +60,8 @@ https://vishalp-awar.github.io/21-Days-21-Project-MERN/project-01/
 - [x] Project 01 – ExploreWorld: Tourism Portal for Trip Planning
 - [x] Project 02 – MyBrand: Work Showcase & Contact Portal
 - [x] Project 03 – Smart Resource Manager: Allocation & Utilization Suite
-- [ ] Project 04 – Career Board Pro (Bootstrap Based)
-- [ ] Project 05 – QuickSlot: Real-Time Booking & Calendar Orchestration (API Based)
+- [x] Project 04 – Career Board Pro (Bootstrap Based)
+- [x] Project 05 – QuickSlot: Real-Time Booking & Calendar Orchestration (API Based)
 - [ ] More projects coming...
 
 ---
